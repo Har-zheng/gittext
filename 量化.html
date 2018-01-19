@@ -1,0 +1,616 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>量化策略 - 上海证券通官网</title>
+<script type="text/javascript" src="http://jc.zqt888.cn/statics/shop/2018/js/jquery-1.8.3.min.js"></script>
+<link href="http://jc.zqt888.cn/statics/shop/2018/css/top.css?v=12263301" rel="stylesheet" type="text/css" />
+<link href="http://jc.zqt888.cn/statics/lianghua/css/lianghua.css?v=12263306" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://jc.zqt888.cn/statics/shop/2018/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="http://jc.zqt888.cn/statics/js/highstock/code/highstock.js?v=122633"></script></head>
+<body >
+<div id="header2">
+<div id="kj">
+     <div class="logo"><a href="http://www.zqt888.cn/"><img src="http://www.zqt888.cn/statics/shop/2018/images/logo.png" border="0"/></a></div>
+     <div class="menu">
+        <ul>
+            <li><a href="http://www.zqt888.cn/">网站首页</a></li>
+            <li ><a href="http://shop.zqt888.cn/">投资教育</a></li>
+            <li class="on"><a href="http://lianghua.zqt888.cn/">量化策略</a></li>
+            <li><a href="http://video.zqt888.cn/">实盘直播</a></li>
+            <li><a href="javascript:alert('敬请期待');">服务平台</a></li>
+            <li><a href="javascript:alert('敬请期待');">产品中心</a></li>
+        </ul>
+     </div>
+</div>
+</div>
+<div id="zixun">
+<div id="kj">
+     <div class="zixun_a">
+          <div class="zixun_a_pic"><a href="http://www.zqt888.cn/list-6-1.html"><img src="http://www.zqt888.cn/statics/shop/2018/images/20171228145121.png" border="0"/></a></div>
+          <div class="zixun_a_wz">
+          <p><a href="http://www.zqt888.cn/list-6-1.html">证券新闻</a></p>
+          <p><a href="http://www.zqt888.cn/list-6-1.html">一网打尽所有股市证券类新闻</a></p>
+          </div>
+     </div>
+     <div class="zixun_a">
+          <div class="zixun_a_pic"><a href="http://www.zqt888.cn/list-7-1.html"><img src="http://www.zqt888.cn/statics/shop/2018/images/20171228145926.jpg" border="0"/></a></div>
+          <div class="zixun_a_wz">
+          <p><a href="http://www.zqt888.cn/list-7-1.html">行业板块</a></p>
+          <p><a href="http://www.zqt888.cn/list-7-1.html">有态度的调研 有深度的投资</a></p>
+          </div>
+     </div>
+     <div class="zixun_a">
+          <div class="zixun_a_pic"><a href="http://www.zqt888.cn/list-53-1.html"><img src="http://www.zqt888.cn/statics/shop/2018/images/20171228150012.jpg" border="0"/></a></div>
+          <div class="zixun_a_wz">
+          <p><a href="http://www.zqt888.cn/list-53-1.html">名家论市</a></p>
+          <p><a href="http://www.zqt888.cn/list-53-1.html">最精辟的解读 最独家的视角</a></p>
+          </div>
+     </div>
+     <div class="zixun_a">
+          <div class="zixun_a_pic"><a href="http://www.zqt888.cn/list-54-1.html"><img src="http://www.zqt888.cn/statics/shop/2018/images/20171228150039.jpg" border="0"/></a></div>
+          <div class="zixun_a_wz">
+          <p><a href="http://www.zqt888.cn/list-54-1.html">上市公司</a></p>
+          <p><a href="http://www.zqt888.cn/list-54-1.html">信息点评 个股报告研究分析</a></p>
+          </div>
+     </div>
+</div>
+</div><!-- 轮播图 -->
+<div>
+<div id="full-screen-slider">
+	<ul class="slides">
+                                    <li><a href="javascript:;" target="_blank"  style="background:url(http://jc.zqt888.cn/statics/lianghua/images/banner.jpg) no-repeat top center;" title=""></a></li>
+                                       
+	</ul>
+    <ul id="pagination"><li class="on"></li></ul>
+</div>
+</div>
+<script type="text/javascript">
+   $("#full-screen-slider").slide( {titCell:"#pagination", mainCell:".slides", effect:'fade',autoPlay:'true',autoPage:true,delayTime:'500',pnLoop:'true',mouseOverStop:'true'});
+ </script>
+
+<!--收益图表 板块-->
+<div class="box "  id="cler">
+	<p class="p1">证券通 - 价值成长进取一号</p>
+	<div id="container"  style="height: 390px; min-width: 310px">
+    	<div id="container_" style="width:97%; margin:0px auto;height: 390px; text-align:center"></div>
+    </div>
+    <div class="form_right">
+        <div style="margin: 0 auto; width: 232px;margin-top: 12px;">
+    		<div class="font_left">
+    			<p class="">总收益</p>
+    			<p class="p4" id="total_assets_copy"></p>
+    		</div>
+    		<div class="shuxian"></div>
+    		<div class="font_right">
+    			<p class="p">昨日收益</p>
+    			<p class="p4" id="lastday_return_ratio"></p>
+    		</div>
+    	</div>
+        
+    	<div class="xian"></div>
+    	
+    	<div style="margin: 0 auto; width: 232px;margin-top: 12px;">
+    		<div class="font_left">
+    			<p class="">月收益</p>
+    			<p class="p4" id="monthly_return"></p>
+    		</div>
+    		<div class="shuxian"></div>
+    		<div class="font_right">
+    			<p class="p">最大回撤</p>
+    			<p class="p4" id="max_drawdown"></p>
+    		</div>
+    	</div>
+    	<div class="dibu">
+    		<span class="kuai"></span>
+    		<span class="sp">策略亮点</span>
+    		<p class="p5">本策略精选盈利能力强、成长空间大的低估值品种，在100多只绩优蓝筹等权重股中轮动调仓切换，实现稳健、持续盈利。</p>
+    	</div>
+    </div>
+    <div class="form_dibu_clear"></div>
+    <div class="form_dibu">
+    	<div><p class="p6">仓位</p><p class="p7 p8" id="trade_cw"></p></div>
+    	<div><p class="p6">可用资金</p><p class="p7 p8" id="trade_available"></p></div>	
+    	<div><p class="p6">初始资金</p><p class="p7 p8" id="trade_init"></p></div>
+    	<div><p class="p6">总资产</p><p class="p7 p8" id="total_assets"></p></div>
+    	<div><p class="p6">年化收益</p><p class="p7 " id="expected_yield"></p></div>
+    	
+    </div>
+</div>
+<!--当前持仓-->
+<div class="category-content box">
+	<P class="title-blue-line">&nbsp;&nbsp;当前持仓</P>
+    <table>
+        <tr>
+            <th>股票名称</th>
+            <th>股票代码</th>
+            <th>数量/市值</th>
+            <th>成本/收盘价</th>
+            <th>持仓比例</th>
+            <th>盈亏比例</th>
+        </tr>
+        <tbody id="current_cw">
+        </tbody>
+    </table>
+
+</div>
+
+<!--历史调仓-->
+<div class="category-content box">
+    <P class="title-blue-line">&nbsp;&nbsp;最新调仓</P>
+    <table>
+        <tr>
+            <th>股票名称</th>
+            <th>股票代码</th>
+            <th>数量</th>
+            <th>买/卖</th>
+            <th>仓位</th>
+            <th>操作时间</th>
+        </tr>
+        <tbody id="history_cw">
+        </tbody>
+    </table>
+    <!--专业丰富的量化产品-->
+    <div class="title_s">
+    	<P class="title-blue-line">&nbsp;&nbsp;专业丰富的量化产品</P>
+    </div>
+    <div class="chanpin">
+    	
+    	<div class="tongyi">
+    		<div class="ban_kuai"><img src="http://jc.zqt888.cn/statics/lianghua/images/icon_1.png"/>
+	    		<div class="flt">
+	    			<p class="p9">专属量化策略</p><p class="p10">百余位资深投顾老师，为您打造专属的量化交易服务。</p>
+	    		</div>
+    		</div>
+    		<div class="ban_kuai"><img src="http://jc.zqt888.cn/statics/lianghua/images/icon_2.png"/>
+	    		<div class="flt">
+	    			<p class="p9">丰富的因子库</p><p class="p10">支持数百个常用因子，包含Alpha101因子、技术分
+                                                   析因子、基本面因子，如alpha_001、真实波幅因子
+   资金流量因子.</p>
+	    		</div>
+    		</div>
+    		
+    	</div>
+    	<div class="tongyi">
+    		<div class="ban_kuai"><img src="http://jc.zqt888.cn/statics/lianghua/images/icon_3.png"/>
+	    		<div class="flt">
+	    			<p class="p9">智能投顾服务</p><p class="p10">量化策略+大类资产配置+策略商城，量化投资引
+领智能投顾行业</p>
+	    		</div>
+    		</div>
+    		<div class="ban_kuai"><img src="http://jc.zqt888.cn/statics/lianghua/images/icon_4.png"/>
+	    		<div class="flt">
+	    			<p class="p9">海量的大数据</p><p class="p10">A股数据、基金数据、金融期货数据、宏观数据...
+数据完备，专业清洗</p>
+	    		</div>
+    		</div>
+    	</div>
+    	<div class="tongyi">
+    		<div class="ban_kuai"><img src="http://jc.zqt888.cn/statics/lianghua/images/icon_5.png"/>
+	    		<div class="flt">
+	    			<p class="p9">一站式服务</p><p class="p10">付费订阅，实时接收交易指令，一键式买卖，简
+单易懂</p>
+	    		</div>
+    		</div>
+    		<div class="ban_kuai"><img src="http://jc.zqt888.cn/statics/lianghua/images/icon_6.png"/>
+	    		<div class="flt">
+	    			<p class="p9">归因分析</p><p class="p10">使用数据可视化方法，分析策略的风险收益水平超额收益及来源，支持收益分析、持仓分析、绩
+效归因、风格分析等</p>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+    
+</div>
+<div style="clear: both;"></div>
+<!--底部 背景banner-->
+    <div class="dibu_banner">
+    	<div class="dingwei">
+    		<p class="p11">“ReadyGo”量化平台</p>
+    	<p>上海证券通是首批经证监会认证的证券投资咨询机构，是国内成立最早的专业证券信息服务商之一 。经过十多年的埋首耕耘，上海证券通已经发展成为拥有</p>
+   		<p>40余个专业的投顾团队、近百位资深的持牌投资顾问的专业投资咨询公司。2018年，上海证券通凭借强大的研发团队，与聚宽平台达成战略合作，打造"ReadyGo"</p>
+    	<p>量化平台，竭力为投资者量身定制专属的量化交易系统，为投资者提供收益持续、稳健的操作模式。</p>
+    	</div>
+    	
+    </div>
+
+<script type="text/javascript">
+function getHighstock() {
+        $.ajax({
+            type: 'POST',
+            url: '/index.php?m=lianghua&c=index&a=advisor',
+			dataType: 'json',
+            data: {
+                jk_url: 'advisor.tradeReturn',
+                trade_id : '6897978',
+                trade_type: 'live'
+            },
+            success: function (josn) {
+                console.log(josn);
+                if(josn.code ===0){
+                    var basicData = new Array();
+                    var categoryData = new Array();
+                    //var plotline = '1500825600000';
+                    var begin = josn.data.list[0]['return_time'];
+                    $.each(josn.data.list ,function (index,value) {
+                        var bArr = [];
+                        var cArr = [];
+                        bArr[0] = value['return_time'] *1000;
+                        bArr[1] = value['benchmark_total_return']*100;
+                        basicData.push(bArr);
+                        cArr[0] = value['return_time'] *1000;
+                        cArr[1] = value['trade_total_return']*100;
+                        categoryData.push(cArr);
+                    });
+                    Highcharts.stockChart('container_', {
+                        chart: {
+                            type: 'area'
+                        },
+                        // 导出图标
+                        credits: {
+                            enabled:false
+                        },
+                        // 时间选择范围
+                        rangeSelector: {
+                            buttons: [{
+                                type: 'week',
+                                count: 1,
+                                text: '1周'
+                            },  {
+                                type: 'month',
+                                count: 1,
+                                text: '1个月'
+                            },
+                                {
+                                    type: 'month',
+                                    count: 6,
+                                    text: '6个月'
+                                }, {
+                                    type: 'year',
+                                    count: 1,
+                                    text: '1年'
+                                }, {
+                                    type: 'all',
+                                    text: '全部'
+                                }],
+                            //默认显示第几个标签
+                            selected: 4,
+                            //右侧时间输入框
+                            inputEnabled : false,
+                            buttonPosition: {
+                                y: 40
+                            }
+                        },
+//                        提示框
+                        tooltip: {
+//                            valueDecimals: 2,
+                            xDateFormat: '%Y-%m-%d',
+                            shared: true,
+                            split : false,
+//                            valueSuffix: '%',
+                            formatter: function() {
+                                var w = getWeek(Highcharts.dateFormat('%w', this.x));
+                                var s = '<b>'+ w +' '+ Highcharts.dateFormat('%Y-%m-%d', this.x) + '</b>';
+                                $.each(this.points, function (index,value) {
+                                    var color = value.series.color;
+                                    s += '<br/><b style="color: '+color+'">'+value.series.name+"</b>:<b>" +keepDecimals( this.y)+'%</b>';
+                                });
+                                return s;
+                            }
+                        },
+                        //图形颜色
+                        plotOptions: {
+                            area: {
+                                fillOpacity: 0.1, // 指定所有面积图的透明度
+                                pointStart: 1940,
+                                marker: {
+                                    enabled: false,
+                                    symbol: 'circle',
+                                    radius: 2,
+                                    states: {
+                                        hover: {
+                                            enabled: true
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        legend: {
+                            enabled: true,
+                            align: 'left',
+                            verticalAlign: 'top',
+                            y: -10,
+                            x: -10
+                        },
+                        xAxis:{
+                            type: 'datetime',
+                            gridLineWidth: 1,
+                            tickInterval:24 * 60 * 60 *1000 ,
+                            title:{
+                                text:''
+                            },
+
+//                            minTickInterval: 360000,//间隔值
+                            labels: {
+                                formatter: function () {
+                                    return Highcharts.dateFormat('%y-%m-%d',this.value);
+                                },
+//                                step:1 ,
+                                rotation:0//倾斜30度，防止数量过多显示不全
+                            },
+                            plotLines:[{
+                                color:'#00ff00',            //线的颜色，定义为红色
+                                dashStyle:'solid',//标示线的样式，默认是solid（实线），这里定义为长虚线
+                                //value: plotline,               
+                                width:2 ,                //标示线的宽度，2px
+                                label:{
+                                    text:'分享开始',     //标签的内容
+                                    align:'center',                //标签的水平位置，水平居左,默认是水平居中center
+                                    x:10,                   //标签相对于被定位的位置水平偏移的像素，重新定位，水平居左10px
+                                    rotation:360
+                                }
+                            }]
+                        },
+                        yAxis: {
+                            title: {
+                                text: '累计收益  (%)'
+                            },
+                            labels: {
+                                formatter: function () {
+                                    return this.value + '%';
+                                }
+                            },
+                            //纵坐标间距
+                            tickInterval:0.5
+                        },
+                        //底部滑动条
+                        navigator: {
+                            xAxis: {
+                                labels: {
+                                    formatter: function () {
+                                        return Highcharts.dateFormat('%y-%m-%d',this.value);
+                                    }
+                                }
+                            },
+                            height: 20,
+                            margin: 10
+                        },
+                        scrollbar: {
+                            barBackgroundColor: 'gray',
+                            barBorderRadius: 7,
+                            barBorderWidth: 0,
+                            buttonBackgroundColor: 'gray',
+                            buttonBorderWidth: 0,
+                            buttonArrowColor: 'blue',
+                            buttonBorderRadius: 7,
+                            rifleColor: 'yellow',
+                            trackBackgroundColor: 'green',
+                            trackBorderWidth: 1,
+                            trackBorderColor: 'red',
+                            trackBorderRadius: 7,
+                            height: 0
+                        },
+                        series: [{
+                            name: '基准收益',
+                            data: basicData,
+                            color : '#ab423e'
+                        } ,{
+                            name: '策略收益',
+                            data: categoryData,
+                            color : '#3675c9'
+                        }]
+                    });
+                }
+
+            },
+            error: function (msg) {
+                alert('系统错误');
+            }
+        });
+    }
+	function showCwInfo() {
+        $.ajax({
+			type: 'POST',
+            url: '/index.php?m=lianghua&c=index&a=advisor',
+			dataType: 'json',
+            data: {
+                jk_url: 'advisor.tradePositions',
+                trade_id : '6897978',
+                trade_type: 'live'
+            },
+            success: function (json) {
+                console.log(json);
+                if(json.code ==0){
+                    var data = json.data.list;
+                    //今日股票
+                    var today_cw = '' ;
+                    //当前持仓
+                    var current_cw = '';
+                    //持仓总仓位
+                    var total_cw = 0;
+                    $.each(data,function (index,value) {
+                        total_cw +=value['weight'];
+                    });
+                    $.each(data,function (index,value) {
+                       /* today_cw +='<tr>' +
+                            '<td>'+value['security'].substr(0,6)+'</td>' +
+                            '<td>'+value['recently_price']+'</td>' +
+                            '<td>'+keepDecimals(value['weight'] / total_cw)+'%</td>' +
+                            '<td>'+getDate(value['position_time'])+'</td>' +
+                            '<td>--</td>' +
+                            '</tr>';*/
+                        current_cw +='<tr>' +
+							'<td>'+value['display_name']+'</td>' +
+                            '<td>'+value['security'].substr(0,6)+'</td>' +
+                            '<td style="color: #000">'+value['amount']+'/'+value['value']+'</td>' +
+                            '<td>'+value['cost']+'元/'+showColor(value['price'],value['cost'],'元')+'</td>' +
+                            '<td>'+hideFive((value['weight'] / total_cw)*100)+'%</td>' +
+                            '<td  style="color: #ff0000;font-weight: bold;">'+showColor(keepDecimals(value['total_return']),0,'元/')+showColor(keepDecimals(value['total_return_ratio'] * 100),0,'%')+'</td>' +
+                            '</tr>';
+                    });
+                    //$("#today_cw").html(today_cw);
+                    $("#current_cw").html(current_cw);
+                }
+            },
+            error: function (msg) {
+                alert('系统错误');
+            }
+        });
+    }
+	function showHistoryInfo() {
+        $.ajax({
+			type: 'POST',
+            url: '/index.php?m=lianghua&c=index&a=advisor',
+			dataType: 'json',
+            data: {
+                jk_url: 'advisor.tradeDeals',
+                trade_id : '6897978',
+                trade_type: 'live',
+				asc:'0',
+            },
+            success: function (json) {
+                //console.log(json);
+                if(json.code ==0){
+                    var data = json.data.list;
+                    //历史持仓
+                    var history_cw = '' ;
+                    $.each(data,function (index,value) {
+                        history_cw +='<tr>' +
+                            '<td>'+value['display_name']+'</td>' +
+                            '<td>'+value['security'].substr(0,6)+'</td>' +
+							'<td style="color: #000">'+value['amount']+'</td>' +
+                            '<td>'+ (value['direction']== '-1' ? '<b style="color: #38e364">卖出</b>' : '<b style="color: #ff5c5c">买入</b>')+'</td>' +
+							'<td>'+keepDecimals(value['weight']*100)+'%</td>' +
+                            '<td>'+getDate(value['deal_time'])+'</td>' +
+                            '</tr>';
+                    });
+                    $("#history_cw").html(history_cw);
+                }
+            },
+            error: function (msg) {
+                alert('系统错误');
+            }
+        });
+    }
+
+	 function showTradeInfo() {
+        $.ajax({
+			type: 'POST',
+            url: '/index.php?m=lianghua&c=index&a=advisor',
+			dataType: 'json',
+            data: {
+                jk_url: 'advisor.tradeInfo',
+                trade_id : '6897978',
+                trade_type: 'live',
+            },
+            success: function (json) {
+                if(json.code ==0){
+                    var data = json.data.list;
+                    $("#total_assets").html(data[0].value);
+                    $("#trade_init").html(data[0].start_cash);
+                    $("#trade_available").html(data[0].cash);
+                    $("#trade_cw").html(showColor(keepDecimals(data[0].weight *100),0,"%"));
+                    $("#expected_yield").html(showColor(keepDecimals(data[0].expected_yield),0,''));
+
+                    $("#total_assets_copy").html(showColor(keepDecimals(data[0].total_return_ratio * 100),0,"%"));
+					$("#lastday_return_ratio").html(showColor(keepDecimals(data[0].lastday_return_ratio * 100),0,"%"));
+                    $("#monthly_return").html(showColor(keepDecimals(data[0].monthly_return * 100),0,"%"));
+                    $("#max_drawdown").html(showColor(keepDecimals(data[0].max_drawdown * 100),0 ,"%"));
+
+                }
+            },
+            error: function (msg) {
+                alert('系统错误');
+            }
+        });
+    }
+
+	
+getHighstock();
+showCwInfo();
+showHistoryInfo();
+showTradeInfo();
+function hideFive(num){
+	num=keepDecimals(num);
+	var arr=num.toString().split('.');
+	if(arr.length>1){
+		if(arr[1]&&parseInt(arr[1])>=50){
+			arr[1]=Math.floor(parseInt(arr[1])/10);
+			return arr.join('.');
+		}
+		return arr[0];
+	}else{
+		return num;
+	}
+	
+}
+function showColor(n,num,str){
+	var color=n>num?'#ff5c5c':'#38e364';
+	return '<font style="color:'+color+'">'+n+str+'</font>';
+}
+	//保留两位小数
+function keepDecimals(str) {
+    return Math.round(str * 100) / 100;
+}
+//时间戳转时间格式
+function getDate(timestamp) {
+    var time = new Date(timestamp * 1000);
+    var y = time.getFullYear();
+    var m = time.getMonth() + 1;
+    var d = time.getDate();
+    var h = time.getHours();
+    var mm = time.getMinutes();
+    var s = time.getSeconds();
+    return add0(y)+'/'+add0(m)+'/'+add0(d)+' '+add0(h) + ':' + add0(mm) + ':' + add0(s);
+}
+//补0
+function add0(m) {
+    return m < 10 ? '0' + m : m
+}
+function getWeek(w) {
+    var str = '';
+    switch (w){
+        case '0':
+            str = '星期日';
+            break;
+        case '1':
+            str = '星期一';
+            break;
+        case '2':
+            str = '星期二';
+            break;
+        case '3':
+            str = '星期三';
+            break;
+        case '4':
+            str = '星期四';
+            break;
+        case '5':
+            str = '星期五';
+            break;
+        case '6':
+            str = '星期六';
+            break;
+    }
+    return str;
+}
+</script>
+<!--页脚footer-->
+<div class="footer">
+	<p class="box">版权所有：上海证券通投资资讯科技有限公司</p>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b86e97f9a7615890b09e9cb277815bea";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
+

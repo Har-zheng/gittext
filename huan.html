@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>环</title>
+    <style>
+        .box{
+            width: 1200px;
+            margin:  0 auto;
+            background: #0a2953;
+        }
+        .banner_bg{
+            position: relative;
+            overflow: hidden;
+            background: url(./zg_huan.png) no-repeat center top;
+            height: 420px;
+        }
+        .zhen{
+           position: absolute;
+           left: 28%;
+           top: 32%;
+           animation: huanquan 3s linear infinite;
+        }
+        .huan{
+            position: absolute;
+            left: 18.8%;
+            top: 6%;
+            animation: hqan 3s linear infinite;
+        }
+        @keyframes huanquan{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes hqan{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        };
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="banner_bg">
+           <div class="zhen"><img src="./zg_c22.png" alt=""></div>
+           <div class=""><img class="huan" src="./zg_c23.png" alt=""></div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
